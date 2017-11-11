@@ -1,0 +1,16 @@
+[
+{
+  "modid": "${modid}",
+  "name": "BurCore",
+  "description": "Core mod required by all of CJ Burkey's mods.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "-- TODO --",
+  "updateUrl": "",
+  "authorList": ["CJ Burkey"],
+  "credits": "",
+  "logoFile": "logo.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]
