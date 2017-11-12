@@ -8,7 +8,7 @@ public class NumFormatHelper {
 	
 	private static NumberFormat nf = null;
 	
-	public static final void commonPreinit() {
+	public static final void commonConstruct() {
 		try {
 			nf = NumberFormat.getInstance(Locale.getDefault());
 		} catch(Exception e) {

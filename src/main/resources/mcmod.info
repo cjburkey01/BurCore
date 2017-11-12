@@ -5,7 +5,7 @@
   "description": "Core mod required by all of CJ Burkey's mods.",
   "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "-- TODO --",
+  "url": "https://minecraft.curseforge.com/projects/burcore",
   "updateUrl": "",
   "authorList": ["CJ Burkey"],
   "credits": "",
