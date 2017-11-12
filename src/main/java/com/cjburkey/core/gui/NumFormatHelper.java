@@ -1,20 +1,25 @@
 package com.cjburkey.core.gui;
 
+import java.text.NumberFormat;
 import java.util.Locale;
 import com.cjburkey.burcore.BurCore;
-import com.ibm.icu.text.NumberFormat;
 
 public class NumFormatHelper {
 	
 	private static NumberFormat nf = null;
 	
 	public static final void commonConstruct() {
+		Exception ex = null;
 		try {
-			nf = NumberFormat.getInstance(Locale.getDefault());
+			if (Class.forName("java.text.NumberFormat") != null) {
+				nf = NumberFormat.getInstance(Locale.getDefault());
+				return;
+			}
 		} catch(Exception e) {
-			BurCore.logError("Unable to construct a number formatter. Numbers may look ugly, error: " + e.getMessage());
-			BurCore.logWarn("This may be a deobf bug...you'll likely/hopefully never see this in game.");
+			ex = e;
 		}
+		BurCore.logError("Unable to construct a number formatter. Numbers may look ugly, error: " + ((ex != null) ? ex.getMessage() : "Class not found."));
+		BurCore.logWarn("This may be a deobf bug...you'll likely/hopefully never see this in game.");
 	}
 	
 	public static final boolean hasFormat() {
