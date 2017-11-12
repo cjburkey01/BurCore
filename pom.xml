@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.cjburkey</groupId>
+	<artifactId>burcore</artifactId>
+	<name>BurCore</name>
+	<version>1.0.1</version>
+	<packaging>jar</packaging>
+	<build>
+	<extensions>
+		<extension>
+			<groupId>org.apache.maven.wagon</groupId>
+			<artifactId>wagon-ftp</artifactId>
+			<version>1.0-alpha-6</version>
+		</extension>
+	</extensions>
+  </build>
+	<distributionManagement>
+		<repository>
+			<id>burkeymaven</id>
+			<url>ftp://cjburkey.com/public_html/cjburkey.com/burkeymods/maven/</url>
+		</repository>
+	</distributionManagement>
+</project>

@@ -12,7 +12,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(name = ModInfo.NAME, modid = ModInfo.MODID, version = ModInfo.VERSION, dependencies = "", useMetadata = false, clientSideOnly = false, serverSideOnly = false,
+@Mod(name = ModInfo.NAME, modid = ModInfo.MODID, version = ModInfo.VERSION, dependencies = "", useMetadata = false, clientSideOnly = false, serverSideOnly = false, 
 	acceptedMinecraftVersions = "[1.12.2]", acceptableRemoteVersions = "", acceptableSaveVersions = "", certificateFingerprint = "", modLanguage = "java",
 	modLanguageAdapter = "", canBeDeactivated = false, guiFactory = "", updateJSON = "", customProperties = {  })
 public final class BurCore {
